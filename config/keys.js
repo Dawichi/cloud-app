@@ -1,4 +1,4 @@
 module.exports = {
-  mongoURI: "YOUR_MONGO_URI_HERE",
+  mongoURI: "mongodb+srv://dmfajardo:abc123..@mycloudappcluster.5vlw0.mongodb.net/MyCloudAppCluster?retryWrites=true&w=majority",
   secretOrKey: "secret"
 };
