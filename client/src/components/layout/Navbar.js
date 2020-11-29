@@ -1,27 +1,25 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react"
+import { Link } from "react-router-dom"
+import { Navbar, NavbarBrand, NavItem } from 'react-bootstrap' 
+import { CloudFill } from 'react-bootstrap-icons'
 
-class Navbar extends Component {
-  render() {
-    return (
-      <div className="navbar-fixed">
-        <nav className="z-depth-0">
-          <div className="nav-wrapper white">
-            <Link
-              to="/"
-              style={{
-                fontFamily: "monospace"
-              }}
-              className="col s5 brand-logo center black-text"
-            >
-              <i className="material-icons">code</i>
-              MERN
-            </Link>
-          </div>
-        </nav>
-      </div>
-    );
-  }
+class NavBar extends Component {
+	render() {
+		return (
+			<>
+			<Navbar>
+				<NavbarBrand>
+						<CloudFill size="60px" color="#2681ff"/>
+				</NavbarBrand>
+				<NavItem>
+					<Link to="/" >
+						<h1>Welcome to MyCloudApp !</h1>
+					</Link>
+				</NavItem>
+			</Navbar>
+			</>
+		)
+	}
 }
 
-export default Navbar;
+export default NavBar
