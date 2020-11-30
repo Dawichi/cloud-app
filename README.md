@@ -2,7 +2,7 @@
 
 My final project for system administration: A DIY private cloud to storage files such as a NAS software, for a home or office LAN.
 
-<img src="./sample1.png" alt="app image" width="30%"/>
+<img src="./sample1.png" alt="app image" width="50%"/>
 
 
 ## Configuration
