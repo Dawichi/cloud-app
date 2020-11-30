@@ -72,7 +72,7 @@ class Login extends Component {
 					<Row>
 						<Col>
 							<Form noValidate onSubmit={this.onSubmit}>
-								<Form.Group controlId="email">
+								<Form.Group>
 									<Form.Label>
 										<At size="20px"/> Email
 									</Form.Label>
@@ -93,7 +93,7 @@ class Login extends Component {
 									</span>
 								</Form.Group>
 
-								<Form.Group controlId="password">
+								<Form.Group>
 									<Form.Label>
 										<Key size="20px"/> Password
 									</Form.Label>

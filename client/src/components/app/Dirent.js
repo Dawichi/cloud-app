@@ -2,17 +2,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 // Bootstrap
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card'
-import {
-	FolderFill,
-	FileEarmarkTextFill,
-	Arrow90degUp,
-	FileArrowDownFill,
-	Trash
-} from 'react-bootstrap-icons'
+import { Container, Row, Col, Card } from 'react-bootstrap'
+import { Folder, FileEarmarkText, Arrow90degUp, FileArrowDown, Trash } from 'react-bootstrap-icons'
 // File saver
 import { saveAs } from 'file-saver'
 
@@ -23,11 +14,11 @@ import { saveAs } from 'file-saver'
 
 const DirCard = ( props ) => {
 
-	const iconStyle = { color: '#61AFEF', size: 30 }
-	let icon = <FileEarmarkTextFill {...iconStyle} />
+	const iconStyle = { color: '#2681ff', size: 30 }
+	let icon = <FileEarmarkText {...iconStyle} />
 
 	if ( props.isDirectory ) {
-		icon = <FolderFill {...iconStyle} />
+		icon = <Folder {...iconStyle} />
 	}
 	if ( props.parentDirectory ) {
 		icon = <Arrow90degUp {...iconStyle} />
@@ -49,6 +40,7 @@ const DirCard = ( props ) => {
 									textOverflow: 'ellipsis',
 									overflow: 'hidden',
 									whiteSpace: 'nowrap',
+									color: 'black',
 								}}
 							>
 								{icon} {props.name}
@@ -61,7 +53,7 @@ const DirCard = ( props ) => {
 								className="d-flex flex-row-reverse"
 								onClick={() => saveAs(downloadLink, props.name)}
 							>
-								<FileArrowDownFill {...iconStyle} />
+								<FileArrowDown {...iconStyle} />
 							</Col>
 						)}
 

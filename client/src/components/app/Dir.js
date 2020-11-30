@@ -91,7 +91,7 @@ class Dir extends Component {
 		return (
 			<Container>
 
-				<h1 className="text-center">MyCloudApp</h1>
+				
 
 				<Row {...rowProps}>
 					<Col>

@@ -73,7 +73,7 @@ class Register extends Component {
 					<Row>
 						<Col>
 							<Form noValidate onSubmit={this.onSubmit}>
-								<Form.Group controlId="name">
+								<Form.Group>
 									<Form.Label>
 										<Person size="20px"/> Name
 									</Form.Label>
@@ -93,7 +93,7 @@ class Register extends Component {
 									</span>
 								</Form.Group>
 
-								<Form.Group controlId="email">
+								<Form.Group>
 									<Form.Label>
 										<At size="20px"/> Email
 									</Form.Label>
@@ -113,7 +113,7 @@ class Register extends Component {
 									</span>
 								</Form.Group>
 
-								<Form.Group controlId="password">
+								<Form.Group>
 									<Form.Label>
 										<Key size="20px"/> Password
 									</Form.Label>
@@ -133,7 +133,7 @@ class Register extends Component {
 									</span>
 								</Form.Group>
 
-								<Form.Group controlId="password2">
+								<Form.Group>
 									<Form.Label>
 										<Key size="20px"/> Confirm Password
 									</Form.Label>

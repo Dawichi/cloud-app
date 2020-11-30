@@ -10,6 +10,7 @@ import { connect } from "react-redux"
 // Actions
 import { logoutUser } from "../../actions/authActions"
 import { Button, Container } from "react-bootstrap"
+import { Unlock } from 'react-bootstrap-icons'
 // APP
 import Dir from "../app/Dir"
 
@@ -21,9 +22,15 @@ class Dashboard extends Component {
 	}
 
 	render() {
+		const { user } = this.props.auth
+
 		return (
 			<>
 				<Container fluid>
+
+					<br/>
+					<h3 className="text-center">Hello, {user.name.split(" ")[0]} ! <Unlock /></h3>
+					
 
 					<Router>
 						<Container className="mt-5">
