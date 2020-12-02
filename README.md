@@ -21,7 +21,7 @@ Create an account on [mLab](http://mlab.com) and add your `MONGO URI` in `config
 ```javascript
 // config/keys.js
 module.exports = {
-  mongoURI: "YOUR_MONGO_URI_HERE",
+  mongoURI: "MONGO_URI",
   secretOrKey: "secret"
 }
 ```
@@ -34,11 +34,9 @@ Install the missed dependencies for the server and client:
 # In the project folder: cloud-app/
 # Both can take a while depending of your network conection
 	npm i    # install server dependencies
-	cd ..
 	
 	cd client
 	npm i    # install client dependencies
-	cd ..
 ```
 
 
@@ -74,7 +72,7 @@ To build MyCloudApp for production, follow this instructions:
 
 #### Prod - Backend
 
-On main directory you will find a `/sample.env` file. Follow the instructions there to configure the `HOME_CLOUD_STORAGE`. After that, execute the following for start the backend server:
+On main directory you will find a `/sample.env` file. Follow the instructions there to configure the `MYCLOUDAPP_STORAGE`. After that, execute the following for start the backend server:
 
 ```bash
 npm start    # executes backend on normal mode
@@ -87,13 +85,8 @@ npm start    # executes backend on normal mode
 On `/client`directory you will find a `/sample.env` file. Follow the instructions there to configure the `REACT_APP_API_URL`. After that, being in the `/client` directory, execute the following for start the frontend server:
 
 ```bash
-# First, install serve (https://www.npmjs.com/package/serve) 
 	npm i -g serve
-
-# Then build the React app
-	npm run build	# or 'yarn build'
-	
-# And finally execute the server
+	npm run build
 	serve -s build -l 3000 
 ```
 
