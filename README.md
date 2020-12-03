@@ -103,5 +103,5 @@ This project is a MERN app, wich uses the following technologies:
 - [Redux](https://redux.js.org/basics/usagewithreact) for state management between React components
 
 
-Made with ♥ and JavaScript
-Dont forget to ⭐ it
+Made with ♥ and JavaScript.  
+Dont forget to ⭐ it!
