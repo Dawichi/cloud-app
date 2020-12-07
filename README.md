@@ -93,7 +93,6 @@ On `/client`directory you will find a `/sample.env` file. Follow the instruction
 
 ---
 
-
 ### About 
 
 This project is a MERN app, wich uses the following technologies:
@@ -102,7 +101,6 @@ This project is a MERN app, wich uses the following technologies:
 - [Express](http://expressjs.com/) and [Node](https://nodejs.org/en/) for backend
 - [React](https://reactjs.org) and [React Router](https://reacttraining.com/react-router/) for frontend
 - [Redux](https://redux.js.org/basics/usagewithreact) for state management between React components
-
 
 
 Made with ♥ and JavaScript.  
