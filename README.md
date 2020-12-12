@@ -92,6 +92,7 @@ On `/client`directory you will find a `/sample.env` file. Follow the instruction
 
 ---
 
+
 ### About 
 
 This project is a MERN app, wich uses the following technologies:
